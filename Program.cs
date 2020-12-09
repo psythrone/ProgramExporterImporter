@@ -153,6 +153,7 @@ namespace ProgramExporterImporter
                         product.Id = 0;
                         context.Products.Add(product);
                     }
+                    context.SaveChanges();
 
                     break;
                 case DataType.JSON:
@@ -164,6 +165,7 @@ namespace ProgramExporterImporter
                         product.Id = 0;
                         context.Products.Add(product);
                     }
+                    context.SaveChanges();
 
                     break;
             }
